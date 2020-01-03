@@ -1,9 +1,10 @@
-# users-support
-Application allows company's users to report problem to IT administrator.  
+Project description.
 
-1. Application's main page form contains fields that need to be filled with data concerning particular IT issue like broken laptop, smartphone and software.  
+Application allows user to report problem to IT administrator.
 
-2. While user clicks 'Report problem' button application sends e-mail to IT administrator defined in php script.  
+1. Application's main form contains fields that need to be filled with data concerning particular IT issue like broken laptop, smartphone and software.
+
+2. While user clicks 'Report problem' button application sends information to IT administrators defined in php script.
 
 3. While user clicks 'Report problem' button application also writes data to MySQL database created for project's purpose.
 
