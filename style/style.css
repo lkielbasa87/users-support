@@ -1,0 +1,399 @@
+/*
+1. Reset
+2. Global styles
+3. Typography
+4. Components
+5. Header
+6. Main sections styling
+7. Footer
+*/
+
+/*
+1. Reset
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+2. Global styles
+*/
+
+body {
+	background-color: #F4F3EF;
+	color: #62615C;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	text-align: center;
+	padding: 0 10%;
+}
+
+article {
+	padding: 0 10%;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*
+3. Typography
+*/
+
+p {
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+@media screen and (min-width: 1024px) {
+	p {
+		font-size: 18px;
+	}
+}
+
+/*
+4. Components
+*/
+
+.section-header {
+	padding: 42px 0 20px;
+	font-size: 18px;
+	color: #E50000;
+}
+
+/*
+5. Header
+*/
+
+header {
+	/*background-color: red;*/
+	text-align: center;
+}
+
+.logo-bar {
+	/*background-color: red;*/
+	background: linear-gradient(to bottom, #bdbdbd, #F4F3EF);
+	padding: 10px 0;
+}
+
+@media screen and (min-width: 1024px) {
+	.logo-bar {
+		padding: 20px;
+	}
+}
+
+.top {
+	padding: 75px 0 40px;
+	color: #FFFFFF;
+	font-family: 'Source Serif Pro', serif;
+	background: url('../img/header_photo_small.jpg') 0 0;
+	background-size: cover;
+}
+
+@media screen and (min-width: 1024px) {
+	.top {
+		background: url(../img/header_photo_big.jpg) 0 0;
+		background-size: cover;
+		padding: 125px 0 90px;
+	}
+}
+
+.top h1 {
+	margin-bottom: 8px;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+	.top h1 {
+		margin-bottom: 50px;
+		font-size: 80px;
+	}
+}
+
+.top p {
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+@media screen and (min-width: 1024px) {
+	.top p {
+		font-size: 36px;
+	}
+}
+
+.top a {
+	display: inline-block;
+	margin: 20px 0 0;
+	color: #FFFFFF;
+	padding: 10px 24px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: 1px solid #FFFFFF;
+	border-radius: 3px;
+}
+
+@media screen and (min-width: 1024px) {
+	.top a {
+		font-size: 24px;
+	}
+}
+
+.top a:hover {
+	background-color: #FFFFFF;
+	color: #4C473C;
+}
+
+nav {
+	background-color: #FFFFFF;
+	box-shadow: 1px 1px 0 #DEDEDE;
+}
+
+nav a {
+	color: #000000;
+	font-size: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+	nav a {
+		font-size: 24px;
+	}
+}
+
+nav li {
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+nav li:hover {
+	background-color: #F4F3EF;
+}
+
+nav li a:hover {
+	color: #4C473C;
+}
+
+@media screen and (min-width: 1024px) {
+	nav li{
+		/*margin: 10px;*/
+		padding: 40px;
+		display: inline-block;
+		/*border: 1px solid #000000;*/
+	}
+}
+
+/*
+6. Main sections styling
+*/
+
+/* Sekcja "przydatne artykuły" */
+.section-articles {
+	/*background-color: red;*/
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.section-articles ul li {
+	/*background-color: red;*/
+	padding-top: 10px;
+
+}
+
+.section-articles h1 {
+	/*background-color: red;*/
+	/*font-weight: 400;*/
+	font-size: 28px;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+
+.section-articles ul {
+	/*background-color: red;*/
+	clear: both;
+}
+
+.articles-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Sekcja formularza */
+
+.section-form {
+	/*background-color: red;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40%;
+	padding-right: 40%;
+}
+
+.section-form h1 {
+	font-weight: 400;
+	font-size: 28px;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+
+.form-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-form .basic {
+	margin-bottom: 6px;
+	width: 100%;
+	border: 1px solid #bdbdbd;
+}
+
+.section-form label {
+	/*background-color: green;*/
+	margin-bottom: 6px;
+	float: left;
+	padding-left: 5px;
+}
+
+.section-form textarea {
+	/*background-color: green;*/
+	margin-bottom: 8px;
+	float: left;
+	width: 100%;
+	height: 150px;
+	border: 1px solid #bdbdbd;
+}
+
+.section-form .priority {
+	/*background-color: green;*/
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	width: 100%;
+	height: 25px;
+	margin-bottom: 6px;
+}
+
+.section-form #isUrgent {
+	margin-right: 5px;
+	margin-left: 10px;
+}
+
+.section-form .button {
+	width: 100%;
+	border: 1px solid #bdbdbd;
+	height: 25px;
+	/*background-color: #62615C;*/
+}
+
+/*
+7. Footer
+*/
+
+footer {
+	background-color: #FFFFFF;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #62615C;
+	font-size: 12px;
+	/*background: linear-gradient(to bottom, #bdbdbd, #F4F3EF);*/
+}
+
+/*
+8. Articles styling 
+*/
+
+article {
+	/*background-color: red;*/
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-top: 50px;
+}
+
+article h1 {
+	font-weight: 400;
+	font-size: 28px;
+	text-transform: uppercase;
+}
+
+article h2 {
+	font-weight: 400;
+	font-size: 21px;
+	text-transform: uppercase;
+}
+
+article .content {
+	padding-top: 25px;
+}
+
+article p {
+	line-height: 1;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+article ul {
+	list-style-type: circle;
+	padding-left: 5%;
+}
+
+article li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
